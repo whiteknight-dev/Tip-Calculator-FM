@@ -15,14 +15,59 @@
     <title>Frontend Mentor | Tip calculator app</title>
   </head>
   <body>
-    Bill Select Tip % 5% 10% 15% 25% 50% Custom Number of People Tip Amount /
-    person Total / person Reset
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+    <main>
+      <h1>SPLITTER</h1>
+      <form>
+        <fieldset>
+          <legend>Bill</legend>
+          <input type="text" name="bill" id="bill" />
+        </fieldset>
+        <fieldset>
+          <legend>Select Tip %</legend>
+          <label>
+            5%
+            <input type="checkbox" name="tip" id="tip" />
+          </label>
+          <label>
+            10%
+            <input type="checkbox" name="tip" id="tip" />
+          </label>
+          <label>
+            15%
+            <input type="checkbox" name="tip" id="tip" />
+          </label>
+          <label>
+            25%
+            <input type="checkbox" name="tip" id="tip" />
+          </label>
+          <label>
+            50%
+            <input type="checkbox" name="tip" id="tip" value="" />
+          </label>
+          <input type="text" name="custom-tip" id="custom-tip" value="Custom" />
+        </fieldset>
+        <fieldset>
+          <legend>Number of People</legend>
+          <input type="text" name="" id="" />
+          <div>
+            <div>
+              <div>
+                <p>Tip Amount</p>
+                <p>/ person</p>
+              </div>
+              <p></p>
+            </div>
+            <div>
+              <div>
+                <p>Total</p>
+                <p>/ person</p>
+              </div>
+              <p></p>
+            </div>
+            <button>Reset</button>
+          </div>
+        </fieldset>
+      </form>
+    </main>
   </body>
 </html>
