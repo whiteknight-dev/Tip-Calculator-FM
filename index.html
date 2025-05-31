@@ -13,6 +13,15 @@
     />
 
     <title>Frontend Mentor | Tip calculator app</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <main>
@@ -20,9 +29,9 @@
       <form>
         <fieldset>
           <legend>Bill</legend>
-          <input type="text" name="bill" id="bill" />
+          <input class="input-l" type="text" name="bill" id="bill" />
         </fieldset>
-        <fieldset>
+        <fieldset class="form__tip">
           <legend>Select Tip %</legend>
           <label>
             5%
@@ -44,11 +53,16 @@
             50%
             <input type="checkbox" name="tip" id="tip" value="" />
           </label>
-          <input type="text" name="custom-tip" id="custom-tip" value="Custom" />
+          <input
+            type="text"
+            name="custom-tip"
+            id="custom-tip"
+            placeholder="Custom"
+          />
         </fieldset>
         <fieldset>
           <legend>Number of People</legend>
-          <input type="text" name="" id="" />
+          <input class="input-l" type="text" name="" id="" />
           <div>
             <div>
               <div>
