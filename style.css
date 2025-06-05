@@ -41,20 +41,58 @@ form {
   height: 100%;
   padding: 2.2rem;
   background-color: var(--White);
-  border-radius: 20px;
+  border-radius: 20px 20px 0 0;
 }
 
 fieldset {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
+  padding: 0;
+  border: none;
 }
 
 legend {
+  margin-bottom: 1rem;
   font-size: 1.4rem;
   color: var(--Grey-500);
 }
 
+p {
+  font-size: 1.4rem;
+}
+
+.form__input-container {
+  position: relative;
+}
+
+.form__input-container input {
+  background-color: var(--Grey-50);
+}
+
+.form__input-icon {
+  position: absolute;
+  left: 2.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.form__input-icon.icon__bill {
+  background: url("./images/icon-dollar.svg") no-repeat;
+}
+
+.form__input-icon.icon__people {
+  background: url("./images/icon-person.svg") no-repeat;
+}
+
 input[type="checkbox"] {
   display: none;
+}
+
+input[type="text"] {
+  border: none;
+  border-radius: 0.4rem;
+  text-align: right;
 }
 
 .input-l {
@@ -64,8 +102,8 @@ input[type="checkbox"] {
 }
 
 .form__tip {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 1.6rem;
 }
 
@@ -76,9 +114,49 @@ input[type="checkbox"] {
 
 .form__tip label,
 .form__tip input {
-  width: 47%;
   font-size: 2.4rem;
   padding: 0.6rem 0;
   text-align: center;
   border-radius: 0.4rem;
+}
+
+.form__total {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+  padding: 2.4rem 2rem;
+  color: var(--White);
+  background-color: var(--Green-900);
+  border-radius: 10px;
+}
+
+.total__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.total__description :first-child {
+  font-size: 1.6rem;
+}
+
+.total__description :last-child {
+  color: var(--Grey-400);
+}
+
+.total__display {
+  color: var(--Green-400);
+  font-size: 3rem;
+}
+
+.reset__button {
+  padding: 0.6rem;
+  background-color: var(--Green-400);
+  color: var(--Green-900);
+  border: none;
+  font: inherit;
+  font-size: 2rem;
+  text-transform: uppercase;
+  border-radius: 0.5rem;
 }

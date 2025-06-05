@@ -29,7 +29,15 @@
       <form>
         <fieldset>
           <legend>Bill</legend>
-          <input class="input-l" type="text" name="bill" id="bill" />
+          <div class="form__input-container">
+            <span class="form__input-icon icon__bill"></span>
+            <input
+              class="input-l input__bill"
+              type="text"
+              name="bill"
+              id="bill"
+            />
+          </div>
         </fieldset>
         <fieldset class="form__tip">
           <legend>Select Tip %</legend>
@@ -62,23 +70,26 @@
         </fieldset>
         <fieldset>
           <legend>Number of People</legend>
-          <input class="input-l" type="text" name="" id="" />
-          <div>
-            <div>
-              <div>
+          <div class="form__input-container">
+            <span class="form__input-icon icon__people"></span>
+            <input class="input-l input__people" type="text" name="" id="" />
+          </div>
+          <div class="form__total">
+            <div class="total__container">
+              <div class="total__description">
                 <p>Tip Amount</p>
                 <p>/ person</p>
               </div>
-              <p></p>
+              <p class="tip__amount total__display">$0.00</p>
             </div>
-            <div>
-              <div>
+            <div class="total__container">
+              <div class="total__description">
                 <p>Total</p>
                 <p>/ person</p>
               </div>
-              <p></p>
+              <p class="total total__display">$0.00</p>
             </div>
-            <button>Reset</button>
+            <button class="reset__button">Reset</button>
           </div>
         </fieldset>
       </form>
