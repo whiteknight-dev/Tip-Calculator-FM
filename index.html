@@ -25,7 +25,9 @@
   </head>
   <body>
     <main>
-      <h1>SPLITTER</h1>
+      <div class="logo__container">
+        <img src="./images/logo.svg" alt="Company logo" />
+      </div>
       <form>
         <div>
           <fieldset>
@@ -37,6 +39,7 @@
                 type="text"
                 name="bill"
                 id="bill"
+                placeholder="0"
               />
             </div>
           </fieldset>
@@ -73,25 +76,34 @@
             <legend>Number of People</legend>
             <div class="form__input-container">
               <span class="form__input-icon icon__people"></span>
-              <input class="input-l input__people" type="text" name="" id="" />
+              <input
+                class="input-l input__people"
+                type="text"
+                name="people"
+                id="people"
+                placeholder="0"
+              />
             </div>
           </fieldset>
         </div>
         <div class="form__total">
-          <div class="total__container">
-            <div class="total__description">
-              <p>Tip Amount</p>
-              <p>/ person</p>
+          <div>
+            <div class="total__container">
+              <div class="total__description">
+                <p>Tip Amount</p>
+                <p>/ person</p>
+              </div>
+              <p class="tip__amount total__display">$0.00</p>
             </div>
-            <p class="tip__amount total__display">$0.00</p>
-          </div>
-          <div class="total__container">
-            <div class="total__description">
-              <p>Total</p>
-              <p>/ person</p>
+            <div class="total__container">
+              <div class="total__description">
+                <p>Total</p>
+                <p>/ person</p>
+              </div>
+              <p class="total total__display">$0.00</p>
             </div>
-            <p class="total total__display">$0.00</p>
           </div>
+
           <button class="reset__button">Reset</button>
         </div>
       </form>

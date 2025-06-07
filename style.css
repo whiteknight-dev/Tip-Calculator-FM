@@ -20,28 +20,22 @@ html {
   font-family: "Space Mono", monospace;
 }
 
+body {
+  background-color: var(--Grey-200);
+}
+
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 2rem;
   min-height: 100dvh;
-  background-color: var(--Grey-200);
-}
-
-h1 {
-  padding: 2rem 0;
-  font-size: var(--input-font);
-  text-align: center;
-  letter-spacing: 0.6rem;
-  color: var(--Green-900);
-  opacity: 0.8;
 }
 
 form {
   flex: 1;
   width: 100%;
   max-width: 521px;
-  height: 100%;
   padding: 2.2rem;
   background-color: var(--White);
   border-radius: 20px 20px 0 0;
@@ -73,7 +67,7 @@ p {
 
 .form__input-icon {
   position: absolute;
-  left: 2.5rem;
+  left: 2rem;
   top: 50%;
   transform: translateY(-50%);
   width: 1.6rem;
@@ -100,7 +94,7 @@ input[type="text"] {
 
 .input-l {
   width: 100%;
-  padding: 0.6rem 0;
+  padding: 0.6rem 2rem;
   font-size: 2.4rem;
 }
 
@@ -126,7 +120,6 @@ input[type="text"] {
 .form__total {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
   margin-top: 2rem;
   padding: 2.4rem 2rem;
   color: var(--White);
@@ -138,6 +131,10 @@ input[type="text"] {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.form__total .total__container {
+  margin-bottom: 4rem;
 }
 
 .total__description :first-child {
@@ -165,8 +162,40 @@ input[type="text"] {
 }
 
 @media (min-width: 48.1rem) {
+  body {
+    display: flex;
+    min-height: 100dvh;
+    align-items: center;
+  }
+
+  main {
+    width: 100%;
+    min-height: unset;
+  }
+
   form {
-    width: 80%;
-    max-width: unset;
+    display: flex;
+    align-items: stretch;
+    gap: 3rem;
+    width: 90%;
+    max-width: 900px;
+    border-radius: 20px;
+  }
+
+  form > div:first-child {
+    flex: 1.5;
+    padding: 1rem;
+  }
+
+  form :first-child fieldset:last-child {
+    margin-bottom: 0;
+  }
+
+  .form__total {
+    flex: 1;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 0;
+    padding: 4rem;
   }
 }
