@@ -27,71 +27,73 @@
     <main>
       <h1>SPLITTER</h1>
       <form>
-        <fieldset>
-          <legend>Bill</legend>
-          <div class="form__input-container">
-            <span class="form__input-icon icon__bill"></span>
+        <div>
+          <fieldset>
+            <legend>Bill</legend>
+            <div class="form__input-container">
+              <span class="form__input-icon icon__bill"></span>
+              <input
+                class="input-l input__bill"
+                type="text"
+                name="bill"
+                id="bill"
+              />
+            </div>
+          </fieldset>
+          <fieldset class="form__tip">
+            <legend>Select Tip %</legend>
+            <label>
+              5%
+              <input type="checkbox" name="tip" id="tip" />
+            </label>
+            <label>
+              10%
+              <input type="checkbox" name="tip" id="tip" />
+            </label>
+            <label>
+              15%
+              <input type="checkbox" name="tip" id="tip" />
+            </label>
+            <label>
+              25%
+              <input type="checkbox" name="tip" id="tip" />
+            </label>
+            <label>
+              50%
+              <input type="checkbox" name="tip" id="tip" value="" />
+            </label>
             <input
-              class="input-l input__bill"
               type="text"
-              name="bill"
-              id="bill"
+              name="custom-tip"
+              id="custom-tip"
+              placeholder="Custom"
             />
-          </div>
-        </fieldset>
-        <fieldset class="form__tip">
-          <legend>Select Tip %</legend>
-          <label>
-            5%
-            <input type="checkbox" name="tip" id="tip" />
-          </label>
-          <label>
-            10%
-            <input type="checkbox" name="tip" id="tip" />
-          </label>
-          <label>
-            15%
-            <input type="checkbox" name="tip" id="tip" />
-          </label>
-          <label>
-            25%
-            <input type="checkbox" name="tip" id="tip" />
-          </label>
-          <label>
-            50%
-            <input type="checkbox" name="tip" id="tip" value="" />
-          </label>
-          <input
-            type="text"
-            name="custom-tip"
-            id="custom-tip"
-            placeholder="Custom"
-          />
-        </fieldset>
-        <fieldset>
-          <legend>Number of People</legend>
-          <div class="form__input-container">
-            <span class="form__input-icon icon__people"></span>
-            <input class="input-l input__people" type="text" name="" id="" />
-          </div>
-          <div class="form__total">
-            <div class="total__container">
-              <div class="total__description">
-                <p>Tip Amount</p>
-                <p>/ person</p>
-              </div>
-              <p class="tip__amount total__display">$0.00</p>
+          </fieldset>
+          <fieldset>
+            <legend>Number of People</legend>
+            <div class="form__input-container">
+              <span class="form__input-icon icon__people"></span>
+              <input class="input-l input__people" type="text" name="" id="" />
             </div>
-            <div class="total__container">
-              <div class="total__description">
-                <p>Total</p>
-                <p>/ person</p>
-              </div>
-              <p class="total total__display">$0.00</p>
+          </fieldset>
+        </div>
+        <div class="form__total">
+          <div class="total__container">
+            <div class="total__description">
+              <p>Tip Amount</p>
+              <p>/ person</p>
             </div>
-            <button class="reset__button">Reset</button>
+            <p class="tip__amount total__display">$0.00</p>
           </div>
-        </fieldset>
+          <div class="total__container">
+            <div class="total__description">
+              <p>Total</p>
+              <p>/ person</p>
+            </div>
+            <p class="total total__display">$0.00</p>
+          </div>
+          <button class="reset__button">Reset</button>
+        </div>
       </form>
     </main>
   </body>
