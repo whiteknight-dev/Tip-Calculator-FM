@@ -22,13 +22,14 @@
     />
 
     <link rel="stylesheet" href="style.css" />
+    <script src="./main.js" defer></script>
   </head>
   <body>
     <main>
       <div class="logo__container">
         <img src="./images/logo.svg" alt="Company logo" />
       </div>
-      <form>
+      <form class="tip__calculator">
         <div>
           <fieldset>
             <legend>Bill</legend>
@@ -36,7 +37,7 @@
               <span class="form__input-icon icon__bill"></span>
               <input
                 class="input-l input__bill"
-                type="text"
+                type="number"
                 name="bill"
                 id="bill"
                 placeholder="0"
@@ -47,28 +48,58 @@
             <legend>Select Tip %</legend>
             <label>
               5%
-              <input type="checkbox" name="tip" id="tip" />
+              <input
+                type="radio"
+                name="tip"
+                class="tip"
+                id="tip"
+                data-value="5"
+              />
             </label>
             <label>
               10%
-              <input type="checkbox" name="tip" id="tip" />
+              <input
+                type="radio"
+                name="tip"
+                class="tip"
+                id="tip"
+                data-value="10"
+              />
             </label>
             <label>
               15%
-              <input type="checkbox" name="tip" id="tip" />
+              <input
+                type="radio"
+                name="tip"
+                class="tip"
+                id="tip"
+                data-value="15"
+              />
             </label>
             <label>
               25%
-              <input type="checkbox" name="tip" id="tip" />
+              <input
+                type="radio"
+                name="tip"
+                class="tip"
+                id="tip"
+                data-value="25"
+              />
             </label>
             <label>
               50%
-              <input type="checkbox" name="tip" id="tip" value="" />
+              <input
+                type="radio"
+                name="tip"
+                class="tip"
+                id="tip"
+                data-value="50"
+              />
             </label>
             <input
               type="text"
-              name="custom-tip"
-              id="custom-tip"
+              name="tip__custom"
+              id="tip__custom"
               placeholder="Custom"
             />
           </fieldset>
@@ -78,7 +109,7 @@
               <span class="form__input-icon icon__people"></span>
               <input
                 class="input-l input__people"
-                type="text"
+                type="number"
                 name="people"
                 id="people"
                 placeholder="0"
@@ -104,7 +135,7 @@
             </div>
           </div>
 
-          <button class="reset__button">Reset</button>
+          <button type="button" class="reset__button" disabled>Reset</button>
         </div>
       </form>
     </main>

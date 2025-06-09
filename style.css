@@ -82,11 +82,11 @@ p {
   background: url("./images/icon-person.svg") no-repeat;
 }
 
-input[type="checkbox"] {
+input[type="radio"] {
   display: none;
 }
 
-input[type="text"] {
+input[type="number"] {
   border: none;
   border-radius: 0.4rem;
   text-align: right;
@@ -107,6 +107,12 @@ input[type="text"] {
 .form__tip label {
   color: white;
   background-color: var(--Green-900);
+}
+
+.form__tip label:hover,
+.form__tip label:has(input[type="radio"]:checked) {
+  background-color: var(--Green-400);
+  color: var(--Green-900);
 }
 
 .form__tip label,
@@ -159,6 +165,11 @@ input[type="text"] {
   font-size: 2rem;
   text-transform: uppercase;
   border-radius: 0.5rem;
+}
+
+.reset__button[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 @media (min-width: 48.1rem) {
